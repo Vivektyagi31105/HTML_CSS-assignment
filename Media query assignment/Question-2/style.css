@@ -1,0 +1,21 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+img {
+  margin: 5px;
+  width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    width: 100%;
+  }
+}

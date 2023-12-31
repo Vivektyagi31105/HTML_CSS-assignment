@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header,
+.footer {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: rgb(235, 123, 160);
+}
+
+.content {
+  background-color: rgb(145, 225, 138);
+}
+
+.sidebar,
+.content {
+  padding: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+  }
+  .sidebar,
+  .content {
+    flex: 1;
+  }
+}
