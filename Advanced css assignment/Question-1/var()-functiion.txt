@@ -1,0 +1,13 @@
+Explain the purpose of using the var() function in css.
+=> The var() function in css can be used to insert the value of a custom property instead of any part of
+   a value of another property. It can not be used in property names, selectors or anything else besides
+   property values. 
+        This function accepts two parameters which are listed below:
+        1. custom_property:It is required parameter. The names of the custom property must start with 
+           two dashes(--).
+        2. value: It is an optional parameter. It is used if the custom property is invalid.
+
+     Syntax: var(custom_property, value)
+         
+          It allow us to reuse values, making easier to maintain consistency and if we need to design change 
+          by make global change. 
